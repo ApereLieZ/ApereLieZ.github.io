@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://img.freepik.com/premium-vector/abstract-polygon-background-pink-tones_5205-167.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#root {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.popular {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.popular__description {
+    background-color: white;
+    padding: 20px;
+}
+
+.popular__description__text {
+    margin: 20px 0;
+}
+
+.popular__description__footer {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+}
+
+.popular__description__header h2 {
+    color: brown;
+    font-size: 40px;
+}
+
+.popular__description__header h3 {
+    font-size: 20px;
+}
+
+.popular__photo img {
+    width: 100%;
+    height: 100%
+}
+
+.popular__list {
+    background-color: white;
+    background: none !important;
+
+}
+
+.popular__list__content {
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.popular__list__content-item {
+    font-size: 30px;
+
+    padding: 10px 0;
+    margin: 2px 0;
+    background-color: rgba(249, 250, 251, 0.5);
+}
+
+
+.calendar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
+
+.calendar__icon {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.calendar__icon__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.calendar__icon__content span {
+    color: white;
+    font-size: 25px;
+}
+
+.calendar__slider {
+    min-height: 100px;
+    height: 250px;
+    display: flex;
+}
+
+.calendar__slider-arrow {
+    border: none;
+    padding: 20px;
+    background: none;
+    background-color: white;
+    opacity: 0.5;
+}
+
+
+.calendar__slider__content {
+    margin: 0 10px;
+    width: 100%;
+    background-color: aliceblue;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.calendar__slider__content-item {
+    display: flex;
+}
+
+.calendar__slider__content-item-info {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    min-width: 150px
+}
+
+.calendar__slider__content-item-info-header{
+    font-size: 35px;
+    color: rgb(93, 14, 14);
+}
+
+.calendar__slider__content-item-info-date{
+
+    margin-top: auto;
+    font-size: 20px;
+    color: blue;
+}
+
+.calendar__slider__content-item-info-grade{
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.calendar__slider__content-item-photo img {
+    width: 250px;
+    height: 250px;
+}
+
+.profile {
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    height: 600px;
+}
+
+.profile__info {
+    display: flex;
+    margin-right: 10px;
+}
+
+
+
+.profile__info__label {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2020-04/2/17/asset/26e9244e717a/sub-buzz-1013-1585849922-6.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+}
+
+.profile__info__label__contacts {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile__info__label__contacts span {
+    margin: 10px;
+}
+
+.profile__info__label__name {
+    height: 80px;
+    margin-top: auto;
+    backdrop-filter: blur(1.8em);
+}
+
+.profile__info__label__name *{
+    margin: 10px;
+}
+
+.profile__info__label__statistic {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.profile__info__label__statistic button {
+    border: none;
+    margin: 1px;
+    background-color: rgb(145, 86, 239);
+    width: calc(100% / 3);
+    color: white;
+    height: 6em;
+
+}
+
+.profile__info__navbar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__info__navbar button {
+    border: none;
+    margin: 1px;
+    height: 25%;
+    background-color: white;
+    opacity: 0.7;
+}
+
+
+
+.profile__vip {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+    background-color: aliceblue;
+}
+
+.profile__vip__header {
+    height: 150px;
+    color: brown;
+}
+
+
+#vip__header-label {
+    margin: 25px 0 0 0;
+    font-size: 30px
+}
+
+#vip__header-description {
+    font-size: 15px;
+}
+
+.profile__vip__features {
+    font-size: 20px;
+    margin: 50px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.profile__vip__price {
+    font-size: 100px;
+    border-top: 2px solid rgb(122, 84, 250);
+
+}
+
+.profile__vip__price span {
+    font-size: 70px;
+}
+
+#profile__vip__desc {
+    font-size: 20px;
+}
+
+.profile__vip__bay {
+    margin-top: auto;
+}
+
+.profile__vip__bay button {
+    width: 100%;
+    font-size: 40px;
+}
+
+.profile__music {
+    border: 1px solid green;
+    margin-left: 10px;
+
+}
+
+.profile__music__player {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; 
+}
+
+.profile__music__player__label {
+    color: aliceblue;
+    margin: 0;
+    margin: auto;
+}
+
+.profile__music__statistic {
+    width: 100%;
+    height: 400px;
+    margin-top: 90px;
+    background-image: url("./grafic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 300px;
+}
+
+.videos__top {
+    margin-right: 10px;
+    background-color: rgba(223, 165, 214, 0.7);
+    font-size: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+.videos__player {
+    margin-left: 10px;
+    
+}
+
